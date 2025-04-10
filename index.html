@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <h2>N<span>P</span></h2>
+      </div>
+      <ul class="menu">
+        <li><a class="active" href="#">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mi</a></li>
+        <li><a href="#portafolio">Portfolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="info-content">
+      <h1>Soy <span>Nicolas Emanuel</span> Puerta</h1>
+      <p> Hola mucho gusto aca su servidor Nicolas Emanuel Puerta, tambien conocido como El Gran Radamanthys, soy estudiante de sistemas en el ISFD114.</p>
+      <a download href="https://docs.google.com/document/d/1e6jFIMFzF0J_HcY_kJ9k92v5jK-baW8ukDPn4sEmIrs/edit?tab=t.0" target="_blank">
+        <button class="download-cv">Descargar CV</button>
+      </a>
+    </div>
+    <img src="img/yo.png" alt=""> 
+  </main>
+</div>
+
+  <div class="about" id="sobre-mi">
+    <img src="img/yo2.png" alt="mi retrato">
+    <div class="about-info">
+      <h2>Sobre Mi</h2>
+      <div class="divider"></div>
+      <p>Soy una persona a la que le gusta el anime, jugar videojuegos, leer manga/manwha y los gatos.</p>
+      <p>Tengo un mejor amigo que estudia sistemas conmigo, un tipazo, tiene los mismos gustos que yo exceptuando el anime/manga jajaj.</p>
+      <a href="#">
+        <button class="download-cv">Ver mas</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portafolio">
+    <div class="portfolio-headings">
+        <h2>Mi Portfolio</h2>
+        <div class="divider"></div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card_img">
+            </div>
+            <div class="card_title">
+                <h2>Descripcion de Proyectos</h2>
+                <p>Estos serian los proyectos que fui practicando desde que inicie el estudio</p>
+            </div>
+            <div class="projects-links">
+                <a href="https://github.com/ElGranRadamanthys?tab=repositories" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fas fa-globe-americas"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv">
+                <a href="#" target="_blank">
+                  Detalles de projectos
+                </a>
+              </button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="contact-section" id="contacto">
+    <div class="contact-headings">
+        <h2>Contacto</h2>
+        <div class="divider"></div>
+    </div>
+    <div class="container-contact">
+      <img src="./img/yo50.png" alt="Nicolas Emanuel Puerta foto">
+      <div class="contact-form">
+        <h4>Envia un mensaje</h4>
+        <form class="form">
+          <input type="text" id="name" placeholder="Nombre">
+          <input type="email" id="email" placeholder="Email">
+          <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
+            <button type="button" class="btn-submit" onclick="sendEmail()">
+              Enviar mensaje
+            </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Nicolas Emanuel Puerta</h2>
+      <h5>Estudiante de Sistemas</h5>
+    </div>
+    <div class="sotial-network">
+      <a href="https://www.instagram.com/sir.nickklas/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/EmblemT/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://discord.gg/Mquhy9eNw3" target="_blank">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function sendEmail() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const mailtoLink = `mailto:nicolasemanuelpuerta1998@gmail.com?subject=Mensaje de ${name}&body=De: ${email}%0A%0A${message}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</body>
+</html>
