@@ -204,7 +204,7 @@ h1 {
 
 .projects-links {
     display: flex;
-    justify-content: space-between; /* deja un espacio entre los iconitos que puse*/
+    justify-content: center; /* deja un espacio entre los iconitos que puse*/
 }
 /* con esto hice que los iconos se vuelvan blancos*/
 .projects-links a {
