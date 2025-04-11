@@ -186,7 +186,7 @@ h1 {
  /* cambiamos el tamaño de area que ocupara la iamgen o fondo que ponga y todoo lo que vaya de bajo, ejemplo descripcion de proyectos */
 .card {
     width: 350px;
-    height: 350px;
+    height: 400px;
     background-color: #1c2833;
 }
 /* ponemos el tamaño de la foto y el url, sin el cover solo mostraria un pedazo de la foto por el poco espacio que asigne */
@@ -213,7 +213,7 @@ h1 {
 }
 
 .projects-links i {
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .card .project-details {
