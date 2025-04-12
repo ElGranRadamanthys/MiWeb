@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body>
+  
 
 <div class="wrapper">
   <header>
@@ -16,11 +17,9 @@
       <div class="brand">
         <h2>N<span>P</span></h2>
       </div>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="hamburger">
-         <i class="fas fa-bars"></i>
-      </label>
-      <ul class="menu">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu" id="menu">
         <li><a class="active" href="#">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre Mi</a></li>
         <li><a href="#portafolio">Portfolio</a></li>
@@ -74,7 +73,7 @@
             </div>
             <div class="project-details-content">
               <button class="project-details download-cv">
-                <a href="#">
+                <a href="#" target="_blank">
                   Detalles de projectos
                 </a>
               </button>
@@ -93,8 +92,8 @@
       <div class="contact-form">
         <h4>Envia un mensaje</h4>
         <form class="form">
-          <input type="text" id="name" placeholder="Asunto">
-          <input type="email" id="email" placeholder="Nombre">
+          <input type="text" id="name" placeholder="Nombre">
+          <input type="email" id="email" placeholder="Email">
           <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
             <button type="button" class="btn-submit" onclick="sendEmail()">
               Enviar mensaje
